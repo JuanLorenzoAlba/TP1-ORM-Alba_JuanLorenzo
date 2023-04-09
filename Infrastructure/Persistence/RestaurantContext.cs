@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Infrastructure.Config;
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -25,14 +26,17 @@ namespace Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new TipoMercaderiaConfig());
+            modelBuilder.ApplyConfiguration(new TipoMercaderiaData());
 
             modelBuilder.ApplyConfiguration(new MercaderiaConfig());
+            modelBuilder.ApplyConfiguration(new MercaderiaData());
 
             modelBuilder.ApplyConfiguration(new ComandaMercaderiaConfig());
 
             modelBuilder.ApplyConfiguration(new ComandaConfig());
 
             modelBuilder.ApplyConfiguration(new FormaEntregaConfig());
+            modelBuilder.ApplyConfiguration(new FormaEntregaData());
         }
     }
 }

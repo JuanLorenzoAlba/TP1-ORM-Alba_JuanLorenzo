@@ -22,27 +22,6 @@ namespace Infrastructure.Config
             entityBuilder.HasMany(t => t.Comandas)
             .WithOne(m => m.FormaEntrega)
             .HasForeignKey(m => m.FormaEntregaId);
-
-            entityBuilder.HasData
-            (
-                new FormaEntrega
-                {
-                    FormaEntregaId = 1,
-                    Descripcion = "Salon",
-                },
-
-                new FormaEntrega
-                {
-                    FormaEntregaId = 2,
-                    Descripcion = "Delivery",
-                },
-
-                new FormaEntrega
-                {
-                    FormaEntregaId = 3,
-                    Descripcion = "Pedidos Ya",
-                }
-            );
         }
     }
 }
