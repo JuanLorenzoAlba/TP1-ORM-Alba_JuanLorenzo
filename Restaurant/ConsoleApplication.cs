@@ -1,15 +1,4 @@
-﻿using Application.UseCase.TipoMercaderias;
-using Domain.Entities;
-using Infrastructure.Command;
-using Infrastructure.Config;
-using Infrastructure.Persistence;
-using Infrastructure.Querys;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Restaurant;
 
 namespace ConsoleApplication
 {
@@ -17,21 +6,23 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            //var ctx = new RestaurantContext();
+            Menu menu = new Menu();
 
-            //var tipoMercaderia = new TipoMercaderia { Descripcion = "Mortal Kombat" };
+            menu.Imprimir();
 
-            //var tipoMercaderiaCommand = new TipoMercaderiaCommand(ctx);
-            //var tipoMercaderiaQuery = new TipoMercaderiaQuery(ctx);
+            Console.Write("| Opcion: ");
+            int opcion = int.Parse(Console.ReadLine());
 
-            //var tipoMercaderiaService = new TipoMercaderiaService(tipoMercaderiaCommand, tipoMercaderiaQuery);
+            switch (opcion)
+            {
+                case (1):
+                    menu.RegistrarLasComanda();
+                    break;
 
-            //tipoMercaderiaService.CreateTipoMercaderia("Mortal Kombat");
-            //tipoMercaderiaService.CreateTipoMercaderia("Need for Speed");
-            //tipoMercaderiaService.CreateTipoMercaderia("Lol");
-            //tipoMercaderiaService.CreateTipoMercaderia("Rocket League");
-
-            //tipoMercaderiaService.RemoveTipoMercaderia(1);
+                case (2):
+                    menu.EnlistarComandas();
+                    break;
+            }
         }
     }
 }
