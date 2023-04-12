@@ -7,6 +7,7 @@ using Domain.Entities;
 using Infrastructure.Command;
 using Infrastructure.Persistence;
 using Infrastructure.Querys;
+using Microsoft.EntityFrameworkCore;
 
 namespace Restaurant
 {
@@ -117,6 +118,7 @@ namespace Restaurant
             }
 
         }
+
         public void EnlistarComandas()
         {
             Console.Clear();
@@ -124,36 +126,26 @@ namespace Restaurant
             Console.WriteLine("|              Lista de Comandas                   |");
             Console.WriteLine("+--------------------------------------------------+");
 
-            var listaComandas = (from cm in _restaurantContext.ComandasMercaderias
-                                 join m in _restaurantContext.Mercaderias on cm.MercaderiaId equals m.MercaderiaId
-                                 join c in _restaurantContext.Comandas on cm.ComandaId equals c.ComandaId
-                                 select new Comanda
-                                 {
-                                     ComandaId = c.ComandaId,
-                                     PrecioTotal = c.PrecioTotal,
-                                     FormaEntrega = c.FormaEntrega,
-                                 }
-                                 ).ToList();
+            var comandaMercaderiaList = _restaurantContext.Comandas
+                            .Include(cm => cm.ComandasMercaderias)
+                            .ThenInclude(m => m.Mercaderia)
+                            .Select(c => new
+                            {
+                            c.ComandaId,
+                            c.PrecioTotal,
+                            c.FormaEntrega,
+                            Mercaderias = c.ComandasMercaderias.Select(m => new
+                            {
+                                m.Mercaderia.MercaderiaId,
+                                m.Mercaderia.Nombre,
+                                m.Mercaderia.Ingredientes,
+                                m.Mercaderia.Preparacion,
+                                m.Mercaderia.Imagen,
+                                m.Mercaderia.TipoMercaderia
+                            })
+                            }).ToList();
 
-            var listaMercaderias = (from cm in _restaurantContext.ComandasMercaderias
-                                    join m in _restaurantContext.Mercaderias on cm.MercaderiaId equals m.MercaderiaId
-                                    join c in _restaurantContext.Comandas on cm.ComandaId equals c.ComandaId
-                                    select new Mercaderia
-                                    {
-                                        MercaderiaId = m.MercaderiaId,
-                                        Nombre = m.Nombre,
-                                        Ingredientes = m.Ingredientes,
-                                        Preparacion = m.Preparacion,
-                                        Imagen = m.Imagen,
-                                        TipoMercaderia = m.TipoMercaderia,
-                                    }
-                                    ).ToList();
-
-            var listaComandasDistintas = listaComandas.DistinctBy(c => c.ComandaId).ToList();
-
-            var listaMercaderiaDistintas = listaMercaderias.DistinctBy(m => m.MercaderiaId).ToList();
-
-            foreach (var comandaItem in listaComandasDistintas)
+            foreach (var comandaItem in comandaMercaderiaList)
             {
                 Console.Clear();
                 Console.WriteLine("+--------------------------------------------------+");
@@ -163,32 +155,20 @@ namespace Restaurant
                 Console.WriteLine("+--------------------------------------------------+");
                 Console.WriteLine("");
 
-                foreach (var comandaMercaderiaItem in _comandaMercaderiaService.GetComandaMercaderiaList())
+                foreach (var mercaderiaItem in comandaItem.Mercaderias)
                 {
-
-                    if (comandaItem.ComandaId == comandaMercaderiaItem.ComandaId)
-                    {
-                        foreach (var mercaderiaItem in listaMercaderiaDistintas)
-                        {
-                            if (mercaderiaItem.MercaderiaId == comandaMercaderiaItem.MercaderiaId)
-                            {
-                                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                                Console.WriteLine("| Nombre del Plato = " + mercaderiaItem.Nombre);
-                                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                                Console.WriteLine("| Ingredientes = " + mercaderiaItem.Ingredientes);
-                                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                                Console.WriteLine("| Preparacion = " + mercaderiaItem.Preparacion);
-                                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                                Console.WriteLine("| Imagen = " + mercaderiaItem.Imagen);
-                                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                                Console.WriteLine("| Tipo de Mercaderia = " + mercaderiaItem.TipoMercaderia.Descripcion);
-                                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                                Console.WriteLine("");
-
-                            }
-                        }
-                    }
-
+                    Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                    Console.WriteLine("| Nombre del Plato = " + mercaderiaItem.Nombre);
+                    Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                    Console.WriteLine("| Ingredientes = " + mercaderiaItem.Ingredientes);
+                    Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                    Console.WriteLine("| Preparacion = " + mercaderiaItem.Preparacion);
+                    Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                    Console.WriteLine("| Imagen = " + mercaderiaItem.Imagen);
+                    Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                    Console.WriteLine("| Tipo de Mercaderia = " + mercaderiaItem.TipoMercaderia.Descripcion);
+                    Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                    Console.WriteLine("");
                 }
                 Console.Write("Presione ENTER para ver la siguiente comanda");
                 Console.ReadKey();

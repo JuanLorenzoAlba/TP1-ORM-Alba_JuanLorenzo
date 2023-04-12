@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\solow\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Application\\obj\\",
+      "outputPath": "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\solow\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Domain\\Domain.csproj"
+            "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Domain\\Domain.csproj"
             }
           }
         }
