@@ -5,7 +5,6 @@ namespace Application.UseCase.Mercaderias
 {
     public class MercaderiaService : IMercaderiaService
     {
-
         private readonly IMercaderiaCommand _command;
         private readonly IMercaderiaQuery _query;
 

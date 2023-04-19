@@ -78,9 +78,6 @@ C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alb
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\ConsoleApplication\obj\Debug\net6.0\Restaurant.pdb
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\ConsoleApplication\obj\Debug\net6.0\Restaurant.genruntimeconfig.cache
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\ConsoleApplication\obj\Debug\net6.0\ref\Restaurant.dll
-C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Restaurant\bin\Debug\net6.0\Application.deps.json
-C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Restaurant\bin\Debug\net6.0\Application.runtimeconfig.json
-C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Restaurant\bin\Debug\net6.0\Application.exe
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Restaurant\bin\Debug\net6.0\Restaurant.exe
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Restaurant\bin\Debug\net6.0\Restaurant.deps.json
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Restaurant\bin\Debug\net6.0\Restaurant.runtimeconfig.json

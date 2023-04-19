@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tSeDhRifAXjpW5eTYLyQO8ddrxKet9tNE0ZHI3hhGExfaQnqbYxp+8RQ+ZjKM5TDIfT1UJFlR9csoaTQSvmF0A==",
+  "dgSpecHash": "TQ91cLptKAeINoKYd/tAzdLRvYAreRCfkuUgr8gyk7BBKeKZF6mFPN6k47yWecCHM2NllhoEvczVdc+vcWfGWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Restaurant\\Restaurant.csproj",
+  "projectFilePath": "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Restaurant\\Restaurant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solow\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\solow\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

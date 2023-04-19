@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IQjpAODyPC4tp5C502caRKVA76pa7FppdLcsddOhxeCf4ZP0GWyLhFvps8Z+TvuBHAj+rOyvXjixHaC27RB3Ng==",
+  "dgSpecHash": "t2WxaJLa81wEblxjVX344U/p2Yxu+mj5h+UHe/ApPMCoJNdKDApKlH9top3XHLvuhVCkAXy3jzETirJa97PUzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solow\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\solow\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

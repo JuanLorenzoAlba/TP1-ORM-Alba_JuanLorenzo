@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a72lReQq1Qn+YKKiqaC7P8BfwC/WSvSMs0d6nrkvO+ZxbjSARK2f3HQVwgjWSrmLCHwFlle+aEU5kRR4yzIywA==",
+  "dgSpecHash": "CdmkyCmYpHTTZn6jXMe52OJ2aLjwxC9lokR/x2C/h83dpD4/zzDNsnKJm/RacYfPQEVyhjBkOK1ivMIS4Y6weg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\solow\\Desktop\\TP1-ORM-Alba_JuanLorenzo\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\solow\\Desktop\\Primer Cuatrimestre\\Proyecto de Software N°1\\TP1-ORM-Alba_JuanLorenzo\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

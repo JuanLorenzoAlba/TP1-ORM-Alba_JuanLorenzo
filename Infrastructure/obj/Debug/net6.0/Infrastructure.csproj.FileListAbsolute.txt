@@ -42,9 +42,6 @@ C:\Users\solow\Desktop\TP1-ORM-Alba_JuanLorenzo\Infrastructure\obj\Debug\net6.0\
 C:\Users\solow\Desktop\TP1-ORM-Alba_JuanLorenzo\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 C:\Users\solow\Desktop\TP1-ORM-Alba_JuanLorenzo\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
 C:\Users\solow\Desktop\TP1-ORM-Alba_JuanLorenzo\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
-C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Infrastructure\bin\Debug\net6.0\Application.deps.json
-C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Infrastructure\bin\Debug\net6.0\Application.runtimeconfig.json
-C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Infrastructure\bin\Debug\net6.0\Application.exe
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
 C:\Users\solow\Desktop\Primer Cuatrimestre\Proyecto de Software N°1\TP1-ORM-Alba_JuanLorenzo\Infrastructure\bin\Debug\net6.0\Infrastructure.dll

@@ -1,4 +1,5 @@
-﻿using Restaurant;
+﻿using Restaurant.Functionalities;
+using Restaurant.CheckingInput;
 
 namespace ConsoleApplication
 {
@@ -6,22 +7,29 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            Menu menu = new Menu();
+            bool seguir = true;
 
-            menu.Imprimir();
-
-            Console.Write("| Opcion: ");
-            int opcion = int.Parse(Console.ReadLine());
-
-            switch (opcion)
+            while (seguir)
             {
-                case (1):
-                    menu.RegistrarLasComanda();
-                    break;
+                new ImpresionMenu().Imprimir();
 
-                case (2):
-                    menu.EnlistarComandas();
-                    break;
+                int opcion = new Validador().ValidarOpcion(1, 3);
+
+                switch (opcion)
+                {
+                    case (1):
+                        new RegistradorComanda().RegistrarLasComanda();
+                        break;
+
+                    case (2):
+                        new EnlistadorComanda().EnlistarComandas();
+                        break;
+
+                    case (3):
+                        Console.Clear();
+                        seguir = false;
+                        break;
+                }
             }
         }
     }
