@@ -6,7 +6,7 @@
 
 ###
 
-<p align="left">✨ Materia: Proyecto de Software<br>📚 Año de la carrera: 3ro<br>🎯 Realización: Individual<br>🎲 Criterios de aceptación:<br>1. Debe permitir registrar las comandas (el pedido del cliente)<br>2. Debe enlistar las comandas con el detalle de los platos<br>📌Consigna:<br>Realice una aplicación de consola la cual cumpla con los criterios de aceptación. La misma<br>debe utilizar base de datos relacional.</p>
+<p align="left">✨ Materia: Proyecto de Software<br>📚 Año de la carrera: 3ro<br>🎯 Realización: Individual<br><br>🎲 Criterios de aceptación:<br>1. Debe permitir registrar las comandas (el pedido del cliente)<br>2. Debe enlistar las comandas con el detalle de los platos<br><br>📌Consigna:<br>Realice una aplicación de consola la cual cumpla con los criterios de aceptación. La misma<br>debe utilizar base de datos relacional.</p>
 
 ###
 
